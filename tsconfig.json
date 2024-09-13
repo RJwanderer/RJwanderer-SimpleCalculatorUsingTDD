@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",                  // This is optional, but can help with module resolution
+    "paths": {
+      "*": ["src/*", "helpers/*"]   // If you have paths that need special resolution
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "spec/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
